@@ -26,14 +26,21 @@ h3 {
 	padding: 1rem;
 	font-size: 3rem;
 	background-color: white;
+	position: -webkit-sticky;
 	position: sticky;
 	top: 0px;
 }
 
 p {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin: 30%;
 	background-color: white;
 	width: 40%;
@@ -43,6 +50,7 @@ p {
 footer{
 	color: white;
 	background-color: black;
+	position: -webkit-sticky;
 	position: sticky;
 	top: 96vh;
 }
@@ -50,7 +58,8 @@ footer{
 .parallax {
   perspective-origin-x: 100%;
 	overflow-x: hidden;
-	perspective: 1px;
+	-webkit-perspective: 1px;
+	        perspective: 1px;
 	height: 100vh;
 	overflow-y: auto;
 }
@@ -60,7 +69,8 @@ footer{
 	margin-bottom: 100vh;
   position: relative;
   height: 100vh;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .base, .overlay {
@@ -72,11 +82,13 @@ footer{
 }
 
 .overlay {
-  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 .base {
-  transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
 }
 
 
@@ -94,9 +106,15 @@ footer{
 }
 
 .red {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	color: white;
 	background-color: rgb(20,20,20);
 	height: 20vh;
