@@ -61,7 +61,6 @@ footer{
 }
 
 .parallax {
-  perspective-origin-x: 100%;
 	overflow-x: hidden;
 	-webkit-perspective: 1px;
 	        perspective: 1px;
@@ -70,7 +69,6 @@ footer{
 }
 
 .parallax-container {
-  transform-origin-x: 100%;
 	margin-bottom: 100vh;
   position: relative;
   height: 100vh;
